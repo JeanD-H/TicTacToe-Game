@@ -9,8 +9,6 @@ public class GameEngine {
         initializeBoard();
     }
 
-    
-
     private void initializeBoard() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -57,3 +55,7 @@ public class GameEngine {
     public char getCurrentPlayer() {
         return currentPlayer;
     }
+public boolean isValidCoordinate(int row, int col) {
+    return row >= 0 && row < 3 && col >= 0 && col < 3;
+}
+
